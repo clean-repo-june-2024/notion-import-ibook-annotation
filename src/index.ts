@@ -12,14 +12,7 @@ const data = JSON.parse(fs.readFileSync("./output.json", "utf8"));
 
 config();
 
-console.log(
-  "process.env",
-  process.env.NOTION_PAGE_ID,
-  process.env.NOTION_API_KEY
-);
-
-const pageId = "d5c0a809-1d92-4eea-bb7a-6545f96d563a"; // replace with your actual pageId
-
+const pageId = process.env.NOTION_PAGE_ID ?? "";
 const apiKey = process.env.NOTION_API_KEY ?? "";
 
 const notion = new Client({ auth: apiKey });
