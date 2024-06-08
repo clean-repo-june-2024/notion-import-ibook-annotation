@@ -27,5 +27,6 @@
     //idk where thoses are
     "noEmit": true,                                       /* Do not emit outputs. */        
     "allowImportingTsExtensions": true,                   /* Allow importing .ts files. */
+    "resolveJsonModule": true,                            /* Include modules imported with .json extension. */
   }
 }
